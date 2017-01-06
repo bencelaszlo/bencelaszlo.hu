@@ -1,0 +1,8 @@
+.image-rounded{
+  border-radius: 50%;
+}
+
+#gaming-steam{
+  background-image: url('../img/gaming/steam.jpg');
+  color: white;
+}
