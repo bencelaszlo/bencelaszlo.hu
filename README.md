@@ -1,1 +1,2 @@
-# Dono27.github.io
+# bencelaszlo.github.io
+Repo of my personal website
