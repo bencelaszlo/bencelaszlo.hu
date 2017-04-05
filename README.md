@@ -1,2 +1,3 @@
 # bencelaszlo.github.io
-Repo of my personal website
+##my own personal website
+Created with HTML5, CSS3, JavaScript, jQuery and Bootstrap 4 Alpha

@@ -2,7 +2,10 @@
   border-radius: 50%;
 }
 
-#gaming-steam{
-  background-image: url('../img/gaming/steam.jpg');
-  color: white;
+.btn-social {
+  width: 6%;
+}
+
+.btn-social a img {
+  width: 100%;
 }
