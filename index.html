@@ -7,19 +7,20 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta http-equiv="x-ua-compatible" content="ie=edge"
-      <meta name="description" content="random-generated text for google search">
+      <meta name="description" content="Bence László">
       <meta name="author" content="Bence László">
-      <meta name="keywords" content="personal,development,gaming">
+      <meta name="keywords" content="personal,development,it,web,blog">
       <!--facebook-meta-->
       <meta property="og:title" content="Bence László">
       <meta property="og:image" content="link_to_image">
-      <meta property="og:description" content="random-generated text for facebook-preview">
+      <meta property="og:description" content="Bence László">
       <!--style-section-->
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
   </head>
 
-  <body>
+  <body onload="changeQuotes()">
       <!--navigation-bar-->
     <nav class="navbar navbar-dark bg-inverse">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -83,15 +84,15 @@
               </ul>
             </div>
 
+            <div>
+              <p id="quotes"></p>
+            </div>
+
             <div class="card card-block">
               <div class="" align="center">
                 <button class="btn btn-social">
                   <a href="https://www.facebook.com/bencelaszlo27" hreflang="hu" target="_blank"><img src="css/icons/social-1_logo-facebook.svg"></a>
                 </button>
-                <!--WHAT URL?-->
-                <!--<button class="btn btn-social">
-                  <a href="#" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-feedly.svg"></a>
-                </button>-->
                 <button class="btn btn-social">
                   <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-github.svg"></a>
                 </button>
@@ -101,17 +102,9 @@
                 <button class="btn btn-social">
                   <a href="https://www.linkedin.com/in/bencelaszlo/" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-linkedin.svg"></a>
                 </button>
-                <!--I don't have slack-->
-                <!--<button class="btn btn-social">
-                  <a href="#" hreflang=""><img src="css/icons/social-1_logo-slack.svg"></a>
-                </button>-->
                 <button class="btn btn-social">
                   <a href="https://open.spotify.com/user/dono.27" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-spotify.svg"></a>
                 </button>
-                <!-- I have nothing on Tumblr-->
-                <!--<button class="btn btn-social">
-                  <a href="#" hreflang="" target="_blank"><img src="css/icons/social-1_logo-tumblr.svg"></a>
-                </button>-->
                 <button class="btn btn-social">
                   <a href="https://twitter.com/bencelaszlo27" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-twitter.svg"></a>
                 </button>
@@ -128,5 +121,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="quotes.js"></script>
   </body>
 </html>
