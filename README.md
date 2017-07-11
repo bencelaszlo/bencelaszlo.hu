@@ -1,2 +1,2 @@
 # bencelaszlo.github.io
-My own personal website. Created with HTML5, CSS3, JavaScript, jQuery and Bootstrap 4 Alpha.
+Builded with HTML5, CSS3, Bootstrap 3 and Javascript

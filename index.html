@@ -1,126 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-      <!--meta-section-->
-      <title>Bence László</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta http-equiv="x-ua-compatible" content="ie=edge"
-      <meta name="description" content="Bence László">
-      <meta name="author" content="Bence László">
-      <meta name="keywords" content="personal,development,it,web,blog">
-      <!--facebook-meta-->
-      <meta property="og:title" content="Bence László">
-      <meta property="og:image" content="link_to_image">
-      <meta property="og:description" content="Bence László">
-      <!--style-section-->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<head>
+    <!--meta-section-->
+    <title>Bence László</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Bence László">
+    <meta name="author" content="Bence László">
+    <meta name="keywords" content="personal,development,it,web,programming,software,art">
+    <!--facebook-meta-->
+    <meta property="og:title" content="Bence László">
+    <meta property="og:image" content="link_to_image">
+    <meta property="og:description" content="Bence László">
+    <!--style-section-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Bootstrap 3.3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
 
-  </head>
-
-  <body onload="changeQuotes()">
+  <body onload="changeQuotes()" class="dark-bg">
       <!--navigation-bar-->
-    <nav class="navbar navbar-dark bg-inverse">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
-      <div class="collapse" id="exCollapsingNavbar">
-        <div class="bg-inverse text-muted p-1">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a href="index.html" hreflang="en"><span class="tag tag-default tag-pill float-xs-right"></span>Main</a>
-            </li>
-            <li class="list-group-item">
-              <a href="development.html" hreflang="en"><span class="tag tag-default tag-pill float-xs-right">💻</span>Development</a>
-            </li>
-            <li class="list-group-item">
-              <a href="art.html" hreflang="en"><span class="tag tag-default tag-pill float-xs-right">✏️</span>Art</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      <nav>
+        <ul class="nav nav-pills">
+          <li><a href="index.html" hreflang="en">Main</a></li>
+          <li><a href="development.html" hreflang="en">IT</a></li>
+          <li><a href="art.html" hreflang="en">Art</a></li>
+          <!--<li><a href="hobby.html" hreflang="en">Hobby</a></li>
+          <li><a href="blog.html" hreflang="en">Blog</a></li>-->
+        </ul>
+      </nav>
+      <div class="container-fluid dark-bg">
+        <div class="row">
 
-    <div class="container-fluid">
-      <div class="card" align="center">
-        <div class="card-block">
-
-          <img class="img-fluid image-rounded" src="img/profile.jpg" alt="pic about me">
-
-          <h4 class="card-title">Bence László</h4>
-
-          <p>
-            <button class="btn btn-outline-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Don't press it
-            </button>
-          </p>
-
-          <div class="collapse" id="collapseExample">
-            <div class="card card-block">
-
-              <ul class="list-group">
-
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-left">🇭🇺</span>
-                  <strong>Location: </strong>
-                  <a href="https://en.wikipedia.org/wiki/Miskolc" hreflang="en" target="_blank">Miskolc</a>,
-                  <a href="https://en.wikipedia.org/wiki/Hungary" hreflang="en" target="_blank"><small>Hungary</small></a>
-                </li>
-
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-left">🏢</span>
-                  <strong>GitHub Organization</strong>: <a href="https://github.com/Nrehtron" target="_blank" hreflang="en">Nrethron</a>
-                </li>
-
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-left">🎓</span>
-                  <strong>Study</strong>: Software IT <strong>@</strong> <a href="http://www.uni-miskolc.hu/en" hreflang="en" target="_blank"><small>University of Miskolc</small></a>
-                </li>
-
-                <li class="list-group-item">
-                  <span class="tag tag-default tag-pill float-xs-left"></span>
-                  <strong>Work</strong>: - <strong>@</strong> <a href="" hreflang="" target="_blank"><small>-</small></a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <p id="quotes"></p>
-            </div>
-
-            <div class="card card-block">
-              <div class="" align="center">
-                <button class="btn btn-social">
-                  <a href="https://www.facebook.com/bencelaszlo27" hreflang="hu" target="_blank"><img src="css/icons/social-1_logo-facebook.svg"></a>
-                </button>
-                <button class="btn btn-social">
-                  <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-github.svg"></a>
-                </button>
-                <button class="btn btn-social">
-                  <a href="https://www.instagram.com/laszlo.bence.27/" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-instagram.svg"></a>
-                </button>
-                <button class="btn btn-social">
-                  <a href="https://www.linkedin.com/in/bencelaszlo/" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-linkedin.svg"></a>
-                </button>
-                <button class="btn btn-social">
-                  <a href="https://open.spotify.com/user/dono.27" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-spotify.svg"></a>
-                </button>
-                <button class="btn btn-social">
-                  <a href="https://twitter.com/bencelaszlo27" hreflang="en" target="_blank"><img src="css/icons/social-1_logo-twitter.svg"></a>
-                </button>
-              </div>
-            </div>
-
+          <div class="col-md-4 col-xs-4">
           </div>
-      </div>
-    </div>
 
-    </div>
+          <div class="col-md-4 col-xs-4">
+            <div class="card-block text-center">
+              <img class="img-fluid image-rounded" src="img/profile.jpg" alt="pic about me">
+              <h1 class="card-title">Bence László</h1>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xs-4">
+          </div>
+
+        </div>
+
+        <!--social media row-->
+        <div class="row">
+
+          <div class="col-md-2 col-xs-4">
+              <button class="btn btn-social">
+                <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank"><img src="css/icons/github.svg"></a>
+              </button>
+          </div>
+
+          <div class="col-md-2 col-xs-4">
+            <button class="btn btn-social">
+              <a href="https://www.facebook.com/bencelaszlo27" hreflang="hu" target="_blank"><img src="css/icons/facebook.svg"></a>
+            </button>
+          </div>
+
+          <div class="col-md-2 col-xs-4">
+            <button class="btn btn-social">
+              <a href="https://twitter.com/bencelaszlo27" hreflang="en" target="_blank"><img src="css/icons/twitter.svg"></a>
+            </button>
+          </div>
+
+          <div class="col-md-2 col-xs-4">
+            <button class="btn btn-social">
+              <a href="https://www.instagram.com/laszlo.bence.27/" hreflang="en" target="_blank"><img src="css/icons/instagram.svg"></a>
+            </button>
+          </div>
+
+          <div class="col-md-2 col-xs-4">
+            <button class="btn btn-social">
+              <a href="https://www.linkedin.com/in/bencelaszlo/" hreflang="en" target="_blank"><img src="css/icons/linkedin.svg"></a>
+            </button>
+          </div>
+
+          <div class="col-md-2 col-xs-4">
+            <button class="btn btn-social">
+              <a href="mailto:" hreflang="" target="_blank"><img src="css/icons/email.svg"></a>
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 col-xs-12 light-blue-bg dark-text">
+            <!--INFO-->
+            <address>
+              <strong>Location</strong><br>
+              Miskolc, Hungary
+            </address>
+
+            <strong>Study</strong>: Software IT @<a href="http://www.uni-miskolc.hu/en" hreflang="en" target="_blank">University of Miskolc</a>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-xs-6 text-center mid-light-blue-bg">
+              <h2>IT</h2>
+              <a href="development.html" hreflang="en">
+                <button type="button" class="btn btn-info"><a href="development.html" hreflang="en">Skills<a/></button>
+              </a>
+
+                <h3>GitHub</h3>
+                <button type="button" class="btn btn-info"><a href="https://github.com/Nrehtron" target="_blank" hreflang="en">Nrethron</a></button>
+                <button type="button" class="btn btn-info"><a href="https://github.com/bencelaszlo" hreflang="en" target="_blank">GitHub Profile</a></button>
+
+                <h3>Learning</h3>
+                <button type="button" class="btn btn-info"><a href="https://www.sololearn.com/Profile/588222" target="_blank" hreflang="en">SoloLearn Profile</a></button>
+                <button type="button" class="btn btn-info"><a href="https://www.codecademy.com/Dono.27" target="_blank" hreflang="en">Codeacademy Profile</a></button>
+          </div>
+
+          <div class="col-md-4 col-xs-6 text-center mid-dark-blue-bg">
+              <a href="art.html" hreflang="en">
+                <h2>ART<h2>
+                <img src="img/art/art1.jpg" class="block-img img-rounded"></img>
+              </a>
+          </div>
+
+          <div class="col-md-4 col-xs-12 dark-blue-bg">
+            <blockquote class="blockquote-reverse">
+              <p id="quotes"><</p>
+            </blockquote>
+          </div>
+        </div>
+
+        <!--<div class="row">
+
+          <div class="col-md-4 col-xs-12 mid-light-blue-bg">
+            <a href="blog.html" hreflang="en">
+              <h2>Blog</h2>
+            </a>
+          </div>
+
+          <div class="col-md-8 col-xs-12 mid-dark-blue-bg">
+            <a href="hobby.html" hreflang="en">
+              <h2>Hobbies</h2>
+            </a>
+          </div>
+
+        </div>-->
+
+      </div>
 
     <!--script-section-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <script src="js/quotes.js"></script>
   </body>
 </html>

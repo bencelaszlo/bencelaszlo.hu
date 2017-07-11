@@ -10,13 +10,14 @@ function changeQuotes() {
                 "The value of an education in a liberal arts college is not the learning of many facts, but the training of the mind...",
                 "Any one who considers arithmetical methods of producing random digits is, of course, in a state of sin.",
                 "An infinite number of monkeys typing into GNU emacs would never make a good program.",
-                "Microsoft isn't evil, they just make really crappy operating systems."
+                "Microsoft isn't evil, they just make really crappy operating systems.",
+                "After all, a designer who doesn’t understand psychology is going to be no more successful than an architect who doesn’t understand physics.",
+                "Creativity comes from applying things you learn in other fields to the field you work in."
               ];
 
   var authors = [
                 "Louis Srygley",
                 "David Leinweber",
-                "Alan J. Perlis",
                 "Donald Knuth",
                 "Mich Ravera",
                 "Albert Einstein",
@@ -25,10 +26,12 @@ function changeQuotes() {
                 "Albert Einstein",
                 "John von Neumann",
                 "Linus Torvalds",
-                "Linus Torvalds"
+                "Linus Torvalds",
+                "Joe Leech",
+                "Aaron Swartz"
               ];
 
   var actualQuote = Math.round( Math.random() * (quotes.length - 1 ) );
 
-  document.getElementById("quotes").innerHTML = quotes[actualQuote] + " - " + authors[actualQuote];
+  document.getElementById("quotes").innerHTML = quotes[actualQuote] + "<br><br>" + authors[actualQuote];
 }
