@@ -22,17 +22,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-<body class="dark-bg">
-  <!--navigation-bar-->
-  <nav>
-    <ul class="nav nav-pills">
-      <li><a href="index.html" hreflang="en">Main</a></li>
-      <li><a href="development.html" hreflang="en">IT</a></li>
-      <li><a href="art.html" hreflang="en">Art</a></li>
-      <li><a href="hobby.html" hreflang="en">Hobby</a></li>
-      <li><a href="blog.html" hreflang="en">Blog</a></li>
-    </ul>
-  </nav>
+<body onload="newRandomArt();" class="dark-bg">
+    <!--navigation-bar-->
+    <div class="col-md-12" onmouseover="newRandomArt()" onmouseout="newRandomArt()">
+        <canvas id="canvas">
+            Sorry, your browser does not support the &lt;canvas&gt; element of HTML5.
+        </canvas>
+    </div>
+    <nav class="dark-blue-bg">
+      <ul class="nav nav-pills navbar-fixed-top dark-blue-bg">
+        <li><a href="index.html" hreflang="en">Main</a></li>
+        <li><a href="development.html" hreflang="en">IT</a></li>
+        <li><a href="art.html" hreflang="en">Art</a></li>
+        <!--<li><a href="hobby.html" hreflang="en">Hobby</a></li>-->
+      </ul>
+    </nav>
 
   <div class="container-fluid">
     <h1>godmode - online developer toolkit collection</h1>

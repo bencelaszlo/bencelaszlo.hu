@@ -22,20 +22,23 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-  <body class="dark-bg">
+<body onload="newRandomArt();" class="dark-bg">
     <!--navigation-bar-->
-    <nav>
-      <ul class="nav nav-pills">
+    <div class="col-md-12" onmouseover="newRandomArt()" onmouseout="newRandomArt()">
+        <canvas id="canvas">
+            Sorry, your browser does not support the &lt;canvas&gt; element of HTML5.
+        </canvas>
+    </div>
+    <nav class="dark-blue-bg">
+      <ul class="nav nav-pills navbar-fixed-top dark-blue-bg">
         <li><a href="index.html" hreflang="en">Main</a></li>
         <li><a href="development.html" hreflang="en">IT</a></li>
         <li><a href="art.html" hreflang="en">Art</a></li>
-        <!--<li><a href="hobby.html" hreflang="en">Hobby</a></li>
-        <li><a href="blog.html" hreflang="en">Blog</a></li>-->
+        <!--<li><a href="hobby.html" hreflang="en">Hobby</a></li>-->
       </ul>
     </nav>
 
-    <div class="container-fluid text-center">
-      <h1>IT</h1>
+    <div class="container-fluid text-center dark-blue-bg">
       <!--Education section-->
       <h2>Education</h2>
 
@@ -44,9 +47,10 @@
 
       <h3>High school, IT @ József Attila Gimnázium <small>2012 - 2016</small></h3>
       <p>Pascal, HTML, CSS, Python</p>
-
+  </div>
+  <div class="container-fluid mid-dark-blue-bg">
       <!--Skills section-->
-      <h2>Skills</h2>
+    <h2>Skills</h2>
 
       <h3>Software</h3>
       <table class="table table-striped dark-blue-bg">
@@ -134,9 +138,9 @@
         </tr>
         <tr>
           <td></td>
-          <td><progress class="progress progress-striped progress-animated" value="65" max="100"></progress></td>
-          <td><progress class="progress progress-striped progress-animated" value="45" max="100"></progress></td>
-          <td><progress class="progress progress-striped progress-animated" value="45" max="100"></progress></td>
+          <td><progress class="progress progress-striped progress-animated" value="60" max="100"></progress></td>
+          <td><progress class="progress progress-striped progress-animated" value="50" max="100"></progress></td>
+          <td><progress class="progress progress-striped progress-animated" value="40" max="100"></progress></td>
           <td><progress class="progress progress-striped progress-animated" value="1" max="100"></progress></td>
           <td><progress class="progress progress-striped progress-animated" value="0" max="100"></progress></td>
           <td><progress class="progress progress-striped progress-animated" value="0" max="100"></progress></td>
@@ -152,7 +156,7 @@
 
         <tr>
           <td></td>
-          <td><progress class="progress progress-striped progress-animated" value="20" max="100"></progress></td>
+          <td><progress class="progress progress-striped progress-animated" value="15" max="100"></progress></td>
         </tr>
       </table>
 
