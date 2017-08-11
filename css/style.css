@@ -1,5 +1,6 @@
 body {
     padding-top: 70px;
+    width: 100%
 }
 
 a {
@@ -25,6 +26,36 @@ a:active {
 .dark-bg {
   background-color: #002324;
   color: #efefef;
+}
+
+#canvas {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.375);
+}
+
+@media only screen and (max-width: 768px) {
+    #canvas {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #canvas {
+        max-height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #canvas {
+        max-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1601px) {
+    #canvas {
+        max-height: 400px;
+    }
 }
 
 .image-rounded{

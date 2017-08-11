@@ -12,7 +12,9 @@ function changeQuotes() {
                 "An infinite number of monkeys typing into GNU emacs would never make a good program.",
                 "Microsoft isn't evil, they just make really crappy operating systems.",
                 "After all, a designer who doesn’t understand psychology is going to be no more successful than an architect who doesn’t understand physics.",
-                "Creativity comes from applying things you learn in other fields to the field you work in."
+                "Creativity comes from applying things you learn in other fields to the field you work in.",
+                "The best programs are the ones written when the programmer is supposed to be working on something else.",
+                "Deleted code is debugged code."
               ];
 
   var authors = [
@@ -28,7 +30,9 @@ function changeQuotes() {
                 "Linus Torvalds",
                 "Linus Torvalds",
                 "Joe Leech",
-                "Aaron Swartz"
+                "Aaron Swartz",
+                "Melinda Varian",
+                "Jeff Sickel"
               ];
 
   var actualQuote = Math.round( Math.random() * (quotes.length - 1 ) );
