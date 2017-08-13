@@ -120,3 +120,8 @@ a:active {
   filter: blur(2px) saturate(40%);
   -webkit-filter: blur(2px) saturate(40%);
 }
+
+footer {
+    text-align: center;
+    font-size: 1.125em;
+}
