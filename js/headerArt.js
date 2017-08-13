@@ -7,7 +7,6 @@ function randomColor() {
 function newRandomArt() {
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
-
     var randomNumber = Math.floor(Math.random() * 5 + 1);
     for(i = 0; i < randomNumber; i ++) {
         drawSquare(canvas, context);
