@@ -22,13 +22,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-<body onload="newRandomArt();" class="dark-bg">
-    <!--navigation-bar-->
-    <div class="col-md-12" onmouseover="newRandomArt()" onmouseout="newRandomArt()">
+<body onload="autoDraw();" class="dark-bg">
+    <!--header canvas-->
+    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
         <canvas id="canvas">
             Sorry, your browser does not support the &lt;canvas&gt; element of HTML5.
         </canvas>
     </div>
+  <!--navigation-bar-->
     <nav class="dark-blue-bg">
       <ul class="nav nav-pills navbar-fixed-top dark-blue-bg">
         <li><a href="index.html" hreflang="en">Main</a></li>
