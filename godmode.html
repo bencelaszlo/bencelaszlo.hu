@@ -19,25 +19,24 @@
     <!--Bootstrap 3.3.7-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
-<body onload="autoDraw();" class="dark-bg">
+<body onload="autoDraw(); currentYear()" class="dark-bg">
     <!--header canvas-->
     <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
         <canvas id="canvas">
             Sorry, your browser does not support the &lt;canvas&gt; element of HTML5.
         </canvas>
     </div>
-  <!--navigation-bar-->
-    <nav class="dark-blue-bg">
-      <ul class="nav nav-pills navbar-fixed-top dark-blue-bg">
-        <li><a href="index.html" hreflang="en">Main</a></li>
-        <li><a href="development.html" hreflang="en">IT</a></li>
-        <li><a href="art.html" hreflang="en">Art</a></li>
-        <!--<li><a href="hobby.html" hreflang="en">Hobby</a></li>-->
-      </ul>
-    </nav>
+    <!--navigation-bar-->
+      <nav class="navbar navbar-default navbar-fixed-top dark-blue-bg">
+        <ul class="nav nav-tabs dark-blue-bg">
+          <li role="presentation"><a href="index.html" hreflang="en">Main</a></li>
+          <li role="presentation"><a href="development.html" hreflang="en">IT</a></li>
+          <li role="presentation"><a href="art.html" hreflang="en">Art</a></li>
+          <!--<li role="presentation"><a href="hobby.html" hreflang="en">Hobby</a></li>-->
+        </ul>
+      </nav>
 
   <div class="container-fluid">
     <h1>godmode - online developer toolkit collection</h1>
@@ -228,8 +227,14 @@
       </div>
   </footer>
 
+    <!--script-section-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--bootstrap Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--custom scripts-->
+    <script src="js/headerArt.js"></script>
     <script src="js/currentYear.js"></script>
-</body>
+    </body>
 
 </html>

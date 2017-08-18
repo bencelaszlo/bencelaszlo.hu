@@ -1,10 +1,12 @@
+/*body style rules for optimal working with bootstrap navbar*/
 body {
     padding-top: 70px;
     width: 100%
 }
 
+/*anchor style rules*/
 a {
-  text-decoration: none !important;
+  /text-decoration: none /*!important*/;
   color: #efefef !important;
 }
 
@@ -23,11 +25,8 @@ a:active {
   color: #448844 !important;
 }
 
-.dark-bg {
-  background-color: #002324;
-  color: #efefef;
-}
-
+/*header section*/
+/*canvas*/
 #canvas {
     width: 100%;
     height: auto;
@@ -58,23 +57,9 @@ a:active {
     }
 }
 
+/*image style rules*/
 .image-rounded{
   border-radius: 50%;
-}
-
-.btn-social {
-  width: 100%;
-}
-
-.btn-social a img {
-  width: 33%;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0, Chrome 19+ */
-  filter: grayscale(100%);
-}
-
-.btn-social a img:hover {
-  -webkit-filter: none !important;
-  filter: none !important;
 }
 
 .block-img {
@@ -86,6 +71,12 @@ a:active {
 .block-img:hover {
   -webkit-filter: none !important;
   filter: none !important;
+}
+
+/*background colors*/
+.dark-bg {
+  background-color: #002324;
+  color: #efefef;
 }
 
 .dark-blue-bg {
@@ -112,16 +103,23 @@ a:active {
   color: #222222 !important;
 }
 
-.img-art {
-  width: 100%;
-}
-
-.img-art:hover{
-  filter: blur(2px) saturate(40%);
-  -webkit-filter: blur(2px) saturate(40%);
-}
-
+/*footer section*/
 footer {
     text-align: center;
     font-size: 1.125em;
+}
+
+.btn-social {
+  width: 100%;
+}
+
+.btn-social a img {
+  width: 33%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0, Chrome 19+ */
+  filter: grayscale(100%);
+}
+
+.btn-social a img:hover {
+  -webkit-filter: none !important;
+  filter: none !important;
 }
