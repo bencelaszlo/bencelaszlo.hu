@@ -14,7 +14,8 @@ function changeQuotes() {
                 "After all, a designer who doesn’t understand psychology is going to be no more successful than an architect who doesn’t understand physics.",
                 "Creativity comes from applying things you learn in other fields to the field you work in.",
                 "The best programs are the ones written when the programmer is supposed to be working on something else.",
-                "Deleted code is debugged code."
+                "Deleted code is debugged code.",
+                "Thinking doesn’t guarantee that we won’t make mistakes. But not thinking guarantees that we will."
               ];
 
   var authors = [
@@ -32,7 +33,8 @@ function changeQuotes() {
                 "Joe Leech",
                 "Aaron Swartz",
                 "Melinda Varian",
-                "Jeff Sickel"
+                "Jeff Sickel",
+                "Leslie Lamport"
               ];
 
   var actualQuote = Math.round( Math.random() * (quotes.length - 1 ) );
