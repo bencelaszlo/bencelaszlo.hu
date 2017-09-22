@@ -6,7 +6,7 @@ body {
 
 /*anchor style rules*/
 a {
-  /text-decoration: none /*!important*/;
+  /text-decoration: none;
   color: #efefef !important;
 }
 
@@ -17,12 +17,12 @@ a:visited {
 
 a:hover {
   text-decoration: none !important;
-    color: #444444!important;
+    color: #088!important;
 }
 
 a:active {
   text-decoration: none !important;
-  color: #448844 !important;
+  color: #084 !important;
 }
 
 /*header section*/

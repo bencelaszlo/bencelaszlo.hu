@@ -15,7 +15,17 @@ function changeQuotes() {
                 "Creativity comes from applying things you learn in other fields to the field you work in.",
                 "The best programs are the ones written when the programmer is supposed to be working on something else.",
                 "Deleted code is debugged code.",
-                "Thinking doesn’t guarantee that we won’t make mistakes. But not thinking guarantees that we will."
+                "Thinking doesn’t guarantee that we won’t make mistakes. But not thinking guarantees that we will.",
+                "In the end, regardless of where you are on the development hierarchy, keep coding. It's where you're most valuable.",
+                "One of my most productive days was throwing away 1,000 lines of code.",
+                "Computer programming is like the ability or skill to see what Picasso saw from all the different angles at once",
+                "There's nothing more permanent than a temporary hack.",
+                "There’s no sense being exact about something if you don’t even know what you’re talking about.",
+                "The browser is a really hostile programming environment.",
+                "There are only two kinds of languages: the ones people complain about and the ones nobody uses.",
+                "Good code is its own best documentation.",
+                "Software: Do you write it like a book, grow it like a plan, accrete it like a pearl, or construct it like a building?",
+                "Everything not saved will be lost."
               ];
 
   var authors = [
@@ -34,7 +44,17 @@ function changeQuotes() {
                 "Aaron Swartz",
                 "Melinda Varian",
                 "Jeff Sickel",
-                "Leslie Lamport"
+                "Leslie Lamport",
+                "The Developer's Code",
+                "Ken Thompson",
+                "Erik Naggum",
+                "Kyle Simpson",
+                "John Von Neumann",
+                "Douglas Crockford",
+                "Bjarne Stroustrup",
+                "Steve McConnell",
+                "Jeff Atwood",
+                "Nintendo Quit Screen"
               ];
 
   var actualQuote = Math.round( Math.random() * (quotes.length - 1 ) );
