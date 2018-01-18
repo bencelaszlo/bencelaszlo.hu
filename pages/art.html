@@ -5,7 +5,7 @@
       <!--meta-section-->
       <title>Bence László</title>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <meta name="description" content="Bence László">
       <meta name="author" content="Bence László">
@@ -16,100 +16,104 @@
       <meta property="og:description" content="Bence László">
       <!--style-section-->
       <link rel="stylesheet" type="text/css" href="../css/style.css">
-      <link rel="stylesheet" type="text/css" href="../css/art.css">
-      <!--Bootstrap 3.3.7-->
-      <link rel="stylesheet" href="../css/bootstrap.min.css">
-      <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+      <!--Bootstrap 4.0.0 beta3-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   </head>
 
-  <body onload="autoDraw(); currentYear();" class="dark-bg">
+  <body onload="autoDraw();" class="dark-bg">
+      <!--navigation-bar-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="../index.html">Home</a>
+              <a class="nav-item nav-link" href="cv.html">CV</a>
+              <a class="nav-item nav-link active" href="art.html">Art <span class="sr-only">(current)</span></a>
+            </div>
+          </div>
+        </nav>
+
       <!--header canvas-->
-      <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+      <div class="container-fluid">
           <canvas id="canvas">
               Sorry, your browser does not support the &lt;canvas&gt; element of HTML5.
           </canvas>
       </div>
-      <!--navigation-bar-->
-        <nav class="navbar navbar-default navbar-fixed-top dark-blue-bg">
-          <ul class="nav nav-tabs dark-blue-bg">
-            <li role="presentation"><a href="../index.html" hreflang="en">Main</a></li>
-            <li role="presentation"><a href="development.html" hreflang="en">IT</a></li>
-            <li role="presentation" class="active"><a href="art.html" hreflang="en">Art</a></li>
-          </ul>
-        </nav>
-
 
     <div class="container-fluid dark-bg">
       <div class="row">
 
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <img class="img-fluid img-art" src="../img/art/tree.jpg" alt="Tree - graphics"></img>
-          <h2>Tree</h2>
-          <p>graphics, tree, minimal</p>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div class="card">
+                  <img class="card-img-top" src="../img/art/tree.jpg" alt="Tree">
+                  <div class="card-body mid-dark-blue-bg">
+                      <h5 class="card-title">Tree</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">graphics, tree, minimal</h6>
+                    <p class="card-text"></p>
+                  </div>
+            </div>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6">
-          <img class="img-fluid img-art" src="../img/art/baz.jpg" alt="BAZ"></img>
-          <h2>BAZ</h2>
-          <p>grunge, collage, borsod-abaúj-zemplén county, miskolc, szirmabesenyő, ózd, decay, rust, industry</p>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+              <div class="card">
+                  <img class="card-img-top" src="../img/art/baz.jpg" alt="BAZ">
+                  <div class="card-body mid-dark-blue-bg">
+                      <h5 class="card-title">BAZ</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">grunge, collage, borsod-abaúj-zemplén county, miskolc, szirmabesenyő, ózd, decay, rust, industry</h6>
+                    <p class="card-text"></p>
+                  </div>
+            </div>
         </div>
 
       </div>
-
     </div>
 
     <footer class="container-fluid dark-blue-bg">
-        <!--Social Media Row-->
+        <!--social media row-->
         <div class="row">
 
-        <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1">
-        </div>
-
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-              <button class="btn btn-social">
-                <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank"><img src="../css/icons/github.svg"></a>
+          <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+              <button class="btn btn-block">
+                <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank"><img class="img-grayscale img-one-third-width" src="../css/icons/github.svg"></a>
               </button>
           </div>
 
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-            <button class="btn btn-social">
-              <a href="https://www.facebook.com/bencelaszlo27" hreflang="hu" target="_blank"><img src="../css/icons/facebook.svg"></a>
+          <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+            <button class="btn btn-block">
+              <a href="https://www.facebook.com/bencelaszlo27" hreflang="hu" target="_blank"><img class="img-grayscale img-one-third-width" src="../css/icons/facebook.svg"></a>
             </button>
           </div>
 
-          <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-            <button class="btn btn-social">
-              <a href="https://twitter.com/bencelaszlo27" hreflang="hu" target="_blank"><img src="../css/icons/twitter.svg"></a>
+          <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+            <button class="btn btn-block">
+              <a href="https://twitter.com/bencelaszlo27" hreflang="hu" target="_blank"><img class="img-grayscale img-one-third-width" src="../css/icons/twitter.svg"></a>
             </button>
           </div>
 
-          <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-            <button class="btn btn-social">
-              <a href="https://www.instagram.com/laszlo.bence.27/" hreflang="en" target="_blank"><img src="../css/icons/instagram.svg"></a>
+          <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+            <button class="btn btn-block">
+              <a href="https://www.instagram.com/laszlo.bence.27/" hreflang="en" target="_blank"><img class="img-grayscale img-one-third-width" src="../css/icons/instagram.svg"></a>
             </button>
           </div>
 
-          <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-            <button class="btn btn-social">
-              <a href="mailto:laszlobence27@gmail.com" hreflang="" target="_blank"><img src="../css/icons/email.svg"></a>
+          <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
+            <button class="btn btn-block">
+              <a href="mailto:bencelaszlo7@protonmail.com" hreflang="" target="_blank"><img class="img-grayscale img-one-third-width" src="../css/icons/email.svg"></a>
             </button>
           </div>
+
         </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <span>Bence László - </span>
-            <span id="current-year"></span>
-        </div>
-
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Bootstrap Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!--Draws random rectangles to the header canvas-->
-    <script async defer src="../js/headerArt.js"></script>
-    <!--Query to current year-->
-    <script async defer src="../js/currentYear.js"></script>
+    <!--jQuery 3.2.1 Slim-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--PopperJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!--Bootstrap 4.0.0 beta3 JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script async defer src="../js/united.js"></script>
   </body>
+
 </html>
