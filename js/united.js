@@ -8,14 +8,11 @@ function randomShape() {
     let canvas = document.getElementById("canvas");
     let context = canvas.getContext("2d");
     context.fillStyle = randomColor();
-
-    //generates random dimension and position
+    //generates random dimension, position and shaoe
     let width = Math.floor(Math.random() * canvas.width);
     let height = Math.floor(Math.random() * canvas.height);
     let dimension = Math.floor(Math.random() * 75 + 25);
-
     let shapeRandom = Math.floor(Math.random() * 2);
-
     if (shapeRandom == 1) {
         drawSquare(context, width, height, dimension);
     } else {
