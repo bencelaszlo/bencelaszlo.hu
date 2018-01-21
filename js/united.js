@@ -14,32 +14,17 @@ function randomShape() {
     let height = Math.floor(Math.random() * canvas.height);
     let dimension = Math.floor(Math.random() * 75 + 25);
 
-    let shapeRandom = Math.floor(Math.random() * 4);
+    let shapeRandom = Math.floor(Math.random() * 2);
 
-    switch (shapeRandom) {
-        case 0:
-            drawSquare(context, width, height, dimension);
-            break;
-        case 1:
-            drawTriangle(context, width, dimension);
-            break;
-        case 2:
-            drawCircle(context, width, height, dimension);
-            break;
-        default:
-            drawLine(context, width, height, dimension);
+    if (shapeRandom == 1) {
+        drawSquare(context, width, height, dimension);
+    } else {
+        drawTriangle(context, width, dimension);
     }
 }
 
 function drawSquare(context, width, height, dimension) {
     context.fillRect(width, height, dimension, dimension);
-}
-
-function drawCircle(context, width, height, dimension) {
-    context.beginPath();
-    context.arc(dimension,dimension/2,dimension/2,0,2*Math.PI);
-    context.fill();
-    context.stroke();
 }
 
 function drawTriangle(context, width, dimension) {
@@ -55,18 +40,6 @@ function drawTriangle(context, width, dimension) {
     context.fill()
 }
 
-function drawLine(context, width, height, dimension) {
-    var dots = [];
-    for (let i = 0; i < 4; i++) {
-        var temp = Math.floor(Math.random() * (width - dimension) + dimension);
-        dots.push(temp);
-    }
-
-    context.moveTo(dots[0],dots[1]);
-    context.lineTo(dots[2],dots[3]);
-    context.stroke();
-}
-
 function autoDraw() {
-    let drawer = setInterval(function(){ randomShape() }, 500);
+    let drawer = setInterval(function(){ randomShape() }, 1000);
 }

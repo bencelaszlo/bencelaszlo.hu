@@ -1,3 +1,11 @@
+html {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+}
+
 /*anchor style rules*/
 a {
   /text-decoration: none;
@@ -30,6 +38,9 @@ a:active {
 @media only screen and (max-width: 768px) {
     #canvas {
         display: none;
+    }
+    .display-1 {
+        font-size: 0.5em;
     }
 }
 
