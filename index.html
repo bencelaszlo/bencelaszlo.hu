@@ -2,127 +2,100 @@
 <html lang="hu">
 
 <head>
-    <!--meta-section-->
-    <title>Bence László</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta http-equiv="cache-control" content="public">
-    <meta name="description" content="László Bence">
-    <meta name="author" content="László Bence">
-    <meta name="keywords" content="personal,development,it,web,programming,software,art">
-    <!--facebook-meta-->
-    <meta property="og:title" content="László Bence">
-    <meta property="og:image" content="link_to_image">
-    <meta property="og:description" content="László Bence">
-    <!--style-section-->
-    <style>
-        html {font-size: 1rem;}
-        #canvas {width: 100%;height: auto;background-color: rgba(0, 0, 0, 0.375);}
-        .dark-bg {background-color: #002324;color: #efefef;}
-        .dark-blue-bg {background-color: #003c3d;}
-        .mid-dark-blue-bg {background-color: #007879;}
-        .mid-light-blue-bg {background-color: #00bbbf;}
-        .light-blue-bg {background-color: #42fcff;}
-        .light-text{color: #efefef};
-        @media only screen and (max-width: 768px) {#canvas {display: none;}.display-1 {font-size: 0.5em;}}
-        @media only screen and (max-width: 1024px) {#canvas {max-height: 250px;}}
-        @media only screen and (max-width: 1600px) {#canvas {max-height: 300px;}}
-        @media only screen and (min-width: 1601px) {#canvas {max-height: 350px;}}
-        .img-max-width {width: 100%}
-        .img-one-third-width {width: 33%;}
-        .img-max-width:hover {filter: blur(2px) saturate(40%);-webkit-filter: blur(2px) saturate(40%);}
-        .img-grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
-        .img-grayscale:hover {-webkit-filter: none !important;filter: none !important;}
-    </style>
-    <!--bootstrap 4.0.0-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--meta-section-->
+  <title>Bence László</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta http-equiv="cache-control" content="public">
+  <meta name="description" content="László Bence">
+  <meta name="author" content="László Bence">
+  <meta name="keywords" content="personal,development,it,web,programming,software,art">
+  <!--facebook-meta-->
+  <meta property="og:title" content="László Bence">
+  <meta property="og:image" content="link_to_image">
+  <meta property="og:description" content="László Bence">
+  <!--style-section-->
+  <style>
+    html {font-size: 1rem;}
+    @media (max-width: 768px) {#canvas {display: none;} .rotate{transform: rotate(0deg);}}
+    @media (max-width: 1024px) {#canvas {max-height: 250px;} .rotate{transform: rotate(180deg);}}
+    @media (max-width: 1600px) {#canvas {max-height: 300px;} .rotate{transform: rotate(90deg);}}
+    @media (min-width: 1601px) {#canvas {max-height: 350px;} .rotate {transform: rotate(90deg);}}
+    #canvas {width: 100%;height: auto;background-color: rgba(0, 0, 0, 0.375);}
+    .dark-bg {background-color: #002324;color: #efefef;}
+    .dark-blue-bg {background-color: #003c3d;}
+    .mid-dark-blue-bg {background-color: #007879;}
+    .mid-light-blue-bg {background-color: #00bbbf;}
+    .light-blue-bg {background-color: #42fcff;}
+    .light-text{color: #efefef};
+    .img-max-width {width: 100%}
+    .img-one-third-width {width: 10%;}
+    .img-max-width:hover {filter: blur(2px) saturate(40%);-webkit-filter: blur(2px) saturate(40%);}
+    .img-grayscale {-webkit-filter: grayscale(100%); filter: grayscale(100%);}
+    .img-grayscale:hover {-webkit-filter: none !important;filter: none !important;}
+  </style>
+  <!--bootstrap 4.0.0-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-  <body onload="autoDraw();" class="dark-blue-bg" id="top">
-      <!--navigation-bar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link" href="index.html#top">Bemutatkozás</a>
-              <a class="nav-item nav-link" href="index.html#cv">CV</a>
-              <a class="nav-item nav-link" href="index.html#contact">Kapcsolat</a>
-              <!--<a class="nav-item nav-link" href="pages/art.html">Grafika</a>-->
-            </div>
-          </div>
-        </nav>
-
-      <!--header canvas-->
-      <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-          <canvas id="canvas">
-              Sajnálom, a böngésződ nem támogatja a HTML5 &lt;canvas&gt; elemét.
-          </canvas>
-      </div>
-
-      <div class="cointaner-fluid light-blue-bg">
-          <h1 class="display-1">László Bence</h1>
-
-          <p><b>Informatikus hallgató</b> vagyok. A rendszerekről kritikusan, a kritikáról rendszerben gondolkozom. Az összes általam kedvelt téma közül, legjobban talán a web érdekel. </p>
-    </div>
-
-    <!--Education section-->
-    <div class="container-fluid mid-dark-blue-bg light-text" id="cv">
-        <h2>Tapasztalat</h2>
-        <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank"><button type="button" class="btn btn-dark">Nyílt forráskódú projektjeim a GitHubon</button></a>
-
-        <h2>Tanulmányok</h2>
-
-        <h3>Programtervező informatikus - Miskolci Egyetem <span class="badge badge-light">2016-</span></h3>
-        <p>ANSI C, bash, shell script, HTML, CSS, Java, OOP, IPC, TeX, LaTeX, SQL</p>
-
-        <h3>Informatika - József Attila Gimnázium <span class="badge badge-light">2012 - 2016</span></h3>
-        <p>Pascal, HTML, CSS, Python</p>
-    </div>
-
-      <!--contact section-->
-      <div class="container-fluid mid-light-blue-bg light-text" id="contact">
-
-          <h2 class="text-center">Kapcsolat</h2>
-
-          <div class="row">
-              <!--empty block for centering-->
-              <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-1"></div>
-
-                <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                      <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank">
-                          <button class="btn btn-block"><img class="img-grayscale img-one-third-width" src="img/icons/github.svg"></button>
-                      </a>
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                      <a href="https://www.facebook.com/bencelaszlo27" hreflang="en" target="_blank">
-                          <button class="btn btn-block"><img class="img-grayscale img-one-third-width" src="img/icons/facebook.svg"></button>
-                      </a>
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                      <a href="https://twitter.com/bencelaszlo27" hreflang="en" target="_blank">
-                          <button class="btn btn-block"><img class="img-grayscale img-one-third-width" src="img/icons/twitter.svg"></button>
-                      </a>
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                      <a href="https://www.instagram.com/laszlo.bence.27/" hreflang="en" target="_blank">
-                          <button class="btn btn-block"><img class="img-grayscale img-one-third-width" src="img/icons/instagram.svg"></button>
-                      </a>
-                </div>
-
-                <div class="col-6 col-sm-4 col-md-2 col-lg-2 col-xl-2">
-                      <a href="mailto:bencelaszlo7@protonmail.com" hreflang="" target="_blank">
-                          <button class="btn btn-block"><img class="img-grayscale img-one-third-width" src="img/icons/email.svg"></button>
-                      </a>
-                </div>
-
+  <body onload="autoDraw();" class="dark-blue-bg" id="top" onscroll="scrollRotate();">
+    <!--navigation-bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html#top">Bemutatkozás</a>
+          <a class="nav-item nav-link" href="index.html#cv">CV</a>
+          <a class="nav-item nav-link" href="index.html#contact">Kapcsolat</a>
+          <!--<a class="nav-item nav-link" href="pages/art.html">Grafika</a>-->
         </div>
       </div>
+    </nav>
+
+    <div class="row">
+      <!--header canvas-->
+      <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+        <canvas id="canvas">
+          Sajnálom, a böngésződ nem támogatja a HTML5 &lt;canvas&gt; elemét.
+        </canvas>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 light-blue-bg">
+        <p class="display-2 rotate">László Bence<p>
+      </div>
+
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mid-light-blue-bg light-text text-center">
+          <h2>Tapasztalat</h2>
+          <a href="https://github.com/bencelaszlo" hreflang="en" target="_blank">
+            <button type="button" class="btn btn-outline-light"><img class="img-grayscale" src="img/icons/github.svg">Nyílt forráskódú projektjeim a GitHubon</button>
+          </a>
+        </div>
+
+        <!--Education-->
+        <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 mid-dark-blue-bg light-text" id="cv">
+          <h2>Képzés</h2>
+          <h3>Programtervező informatikus - Miskolci Egyetem <span class="badge badge-light">2016-</span></h3>
+          <p>ANSI C, bash, shell script, HTML, CSS, Java, OOP, IPC, TeX, LaTeX, SQL</p>
+
+          <h3>Informatika - József Attila Gimnázium <span class="badge badge-light">2012 - 2016</span></h3>
+          <p>Pascal, HTML, CSS, Python</p>
+        </div>
+
+        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 light-text dark-bg text-center">
+          <p><b>Informatikus hallgató</b> vagyok. A rendszerekről kritikusan, a kritikáról rendszerben gondolkozom. Az összes általam kedvelt téma közül, legjobban talán a web érdekel. </p>
+        </div>
+
+        <!--Contact-->
+        <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 text-center light-text">
+          <h2 class="text-center">Kapcsolat</h2>
+        <a href="mailto:bencelaszlo7@protonmail.com" hreflang="" target="_blank">
+          <button class="btn btn-outline-light"><img class="img-grayscale" src="img/icons/email.svg">E-mail küldése</button>
+        </a>
+      </div>
+    </div>
 
     <footer class="container-fluid">
     </footer>
@@ -132,6 +105,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script async defer src="js/united.js"></script>
-
   </body>
 </html>
