@@ -1,10 +1,3 @@
-window.addEventListener('load', function () {
-  var rotates = document.getElementsByClassName('rotate');
-  for (var i = 0; i < rotates.length; i++) {
-      rotates[i].style.height = rotates[i].offsetWidth + 'px';
-  }
-});
-
 function randomColor() {
   let colorSet = ["#003c3d", "#007879", "#00bbbf", "#42fcff"];
   let colorRandom = Math.floor(Math.random() * colorSet.length);
