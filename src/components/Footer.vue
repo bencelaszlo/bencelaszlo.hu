@@ -1,5 +1,11 @@
 <template>
-    <footer class="bg-dark text-light fixed-bottom mb-40">Bence László - {{this.getCurrentYear()}}</footer>
+    <footer class="bg-dark text-light fixed-bottom">
+        <ul>
+            <li>Bence László - {{this.getCurrentYear()}}</li>
+            <li>bencelaszlo@protonmail.com</li>
+            <li>bencelaszlo.github.io</li>
+        </ul>
+    </footer>
 </template>
 
 <script>
@@ -13,8 +19,5 @@
     };
 </script>
 
-<style scoped>
-    .mb-40 {
-        margin-bottom: 4rem;
-    }
+<style scoped lang="scss">
 </style>

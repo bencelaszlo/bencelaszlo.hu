@@ -4,7 +4,7 @@
         <OpenSource v-if="this.$store.getters.selectedSection === 'open-source'" />
         <Blog v-if="this.$store.getters.selectedSection === 'blog'" />
         <About v-if="this.$store.getters.selectedSection === 'about'" />
-        <Main v-if="this.$store.getters.selectedSection === 'main'" />
+        <Home v-if="this.$store.getters.selectedSection === 'home'" />
         <Footer />
     </div>
 </template>
@@ -15,7 +15,7 @@
     import Blog from "./blog/Blog.vue";
     import About from "./about/About.vue";
     import Footer from "./Footer.vue";
-    import Main from "./main/Main.vue";
+    import Home from "./home/Home.vue";
 
     export default {
         name: "app",
@@ -26,7 +26,7 @@
             Blog,
             About,
             Footer,
-            Main
+            Home
         },
 
         computed: {
