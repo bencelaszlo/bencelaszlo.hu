@@ -14,7 +14,6 @@
     import OpenSource from "./open-source/OpenSource.vue";
     import Blog from "./blog/Blog.vue";
     import About from "./about/About.vue";
-    import Footer from "./Footer.vue";
     import Home from "./home/Home.vue";
 
     export default {
@@ -25,7 +24,6 @@
             OpenSource,
             Blog,
             About,
-            Footer,
             Home
         },
 

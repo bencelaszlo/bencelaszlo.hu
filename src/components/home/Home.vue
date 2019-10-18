@@ -1,6 +1,5 @@
 <template>
     <div>
-        <!--<h2>Test</h2>asdasdasd-->
         <div v-for="article in articles" :key="article.id">
             <h2>{{ article.title }} - {{ article.author }} - {{ article.date }}</h2>
             <latex :content="article.content" />
