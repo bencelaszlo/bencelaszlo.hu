@@ -26,28 +26,28 @@
 
 <script>
     export default {
-        name: "OpenSourceProject",
+        name: 'OpenSourceProject',
 
         props: {
             name: {
                 type: String,
-                default: "Project Name"
+                default: 'Project Name'
             },
             imgSrc: {
                 type: String,
-                default: ""
+                default: ''
             },
             imgAlt: {
                 type: String,
-                default: ""
+                default: ''
             },
             shortDescription: {
                 type: String,
-                default: ""
+                default: ''
             },
             description: {
                 type: String,
-                default: ""
+                default: ''
             },
             languages: {
                 type: Array,
@@ -55,19 +55,19 @@
             },
             license: {
                 type: String,
-                default: ""
+                default: ''
             },
             githubRepositoryLink: {
                 type: String,
-                default: ""
+                default: ''
             },
             gitlabRepositoryLink: {
                 type: String,
-                default: ""
+                default: ''
             },
             website: {
                 type: String,
-                default: ""
+                default: ''
             }
         }
     };

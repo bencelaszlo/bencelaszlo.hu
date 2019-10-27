@@ -70,7 +70,7 @@
 <style lang="scss">
     @import "../style/main.scss";
 
-    .margin-top-100 {
+    .margin-top-150 {
         margin-top: 150px !important;
     }
 
