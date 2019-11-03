@@ -1,6 +1,6 @@
 <template>
     <b-card :title="name" :sub-title="shortDescription" class="bg-secondary">
-        <b-card-header class="bg-yellow augmented-div">
+        <b-card-header class="bg-yellow">
             <b-card-img :img-src="imgSrc" :img-alt="imgAlt" img-top />
         </b-card-header>
         <b-card-body class="bg-orange">
