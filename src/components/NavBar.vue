@@ -1,14 +1,14 @@
 <template>
     <header class="bg-black" :class="$isMobile() ? 'margin-top-150' : 'margin-bottom-150'">
         <b-navbar :class="$isMobile() ? 'fixed-bottom' : 'fixed-top'" type="dark" variant="dark-1">
-            <b-navbar-brand>Bence László</b-navbar-brand>
+            <b-navbar-brand>{{ brandLabel }}</b-navbar-brand>
             <b-nav-item v-on:click="selectSection('home')">
                 <div v-if="$isMobile()">
                     <home-icon size="2x" />
                 </div>
                 <div v-else>
                     <home-icon size="3x" />
-                    <span class="ml-12">Home</span>
+                    <span class="ml-12">{{ navbarLabels.home }}</span>
                 </div>
             </b-nav-item>
             <b-nav-item v-on:click="selectSection('open-source')">
@@ -17,7 +17,7 @@
                 </div>
                 <div v-else>
                     <code-icon size="3x" />
-                    <span class="ml-2">Open Source Contributions</span>
+                    <span class="ml-2">{{ navbarLabels.openSource }}</span>
                 </div>
             </b-nav-item>
             <!--<b-nav-item v-on:click="selectSection('blog')">
@@ -26,7 +26,7 @@
                 </div>
                 <div v-else>
                     <book-open-icon size="3x" />
-                    <span class="ml-2">Blog</span>
+                    <span class="ml-2"> {{ navbarLabels.blog }} </span>
                 </div>
             </b-nav-item>-->
             <b-nav-item v-on:click="selectSection('about')">
@@ -35,7 +35,7 @@
                 </div>
                 <div v-else>
                     <info-icon size="3x" />
-                    <span class="ml-2">About</span>
+                    <span class="ml-2">{{ navbarLabels.about }}</span>
                 </div>
             </b-nav-item>
         </b-navbar>
@@ -61,6 +61,18 @@
         },
 
         computed: {},
+
+        data :() => {
+            return {
+                brandLabel: 'Bence László',
+                navbarLabels: {
+                    home: 'Home',
+                    openSource: 'Open Source Contributions',
+                    // blog: 'Blog',
+                    about: 'About'
+                }
+            }
+        },
 
         methods: {
             selectSection(section) {
