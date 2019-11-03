@@ -1,30 +1,36 @@
 <template>
-    <div>
-        <div v-for="article in articles" :key="article.id">
-            <h2>{{ article.title }} - {{ article.author }} - {{ article.date }}</h2>
-            <latex :content="article.content" />
+    <div class="bg-yellow">
+        <div class="h-100 w-75 ml-auto mr-auto">
+            <b-jumbotron bg-variant="dark-1" text-variant="yellow">
+                <template v-slot:header>{{ startModal.title }}</template>
+
+                <template v-slot:lead>{{ startModal.lead }}</template>
+
+                <hr class="my-4" />
+
+                <p>{{ startModal.description }}</p>
+            </b-jumbotron>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Home",
+        name: 'Home',
 
         props: {},
 
         data: () => {
             return {
-                articles: [
-                    {
-                        id: 0,
-                        title: "title",
-                        date: new Date("2019-10-08"),
-                        author: "Bence László",
-                        content: "content content"
-                    },
-                ]
-            };
+                startModal: {
+                    title: 'Bence László',
+                    lead: 'Software Developer',
+                    description: ''
+                }
+            }
+        },
+
+        methods: {
         }
     };
 </script>
