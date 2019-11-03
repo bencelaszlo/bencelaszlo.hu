@@ -1,6 +1,6 @@
 <template>
-    <header class="bg-dark" :class="$isMobile() ? 'margin-top-150' : 'margin-bottom-150'">
-        <b-navbar :class="$isMobile() ? 'fixed-bottom' : 'fixed-top'" type="dark" variant="dark">
+    <header class="bg-black" :class="$isMobile() ? 'margin-top-150' : 'margin-bottom-150'">
+        <b-navbar :class="$isMobile() ? 'fixed-bottom' : 'fixed-top'" type="dark" variant="dark-1">
             <b-navbar-brand>Bence László</b-navbar-brand>
             <b-nav-item v-on:click="selectSection('home')">
                 <div v-if="$isMobile()">
@@ -20,7 +20,7 @@
                     <span class="ml-2">Open Source Contributions</span>
                 </div>
             </b-nav-item>
-            <b-nav-item v-on:click="selectSection('blog')">
+            <!--<b-nav-item v-on:click="selectSection('blog')">
                 <div v-if="$isMobile()">
                     <book-open-icon size="2x" />
                 </div>
@@ -28,7 +28,7 @@
                     <book-open-icon size="3x" />
                     <span class="ml-2">Blog</span>
                 </div>
-            </b-nav-item>
+            </b-nav-item>-->
             <b-nav-item v-on:click="selectSection('about')">
                 <div v-if="$isMobile()">
                     <info-icon size="2x" />
@@ -43,13 +43,18 @@
 </template>
 
 <script>
-    import { BookOpenIcon, CodeIcon, HomeIcon, InfoIcon } from "vue-feather-icons";
+    import {
+        // BookOpenIcon,
+        CodeIcon,
+        HomeIcon,
+        InfoIcon
+        } from "vue-feather-icons";
 
     export default {
         name: "NavBar",
 
         components: {
-            BookOpenIcon,
+            // BookOpenIcon,
             CodeIcon,
             HomeIcon,
             InfoIcon
