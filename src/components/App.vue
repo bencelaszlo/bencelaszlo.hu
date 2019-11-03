@@ -1,4 +1,4 @@
-<template class="bg-danger">
+<template>
     <div id="app" class="bg-dark-1">
         <NavBar />
         <OpenSource v-if="this.$store.getters.selectedSection === 'open-source'" />
