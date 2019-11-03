@@ -1,7 +1,7 @@
 <template>
     <header class="bg-black" :class="$isMobile() ? 'margin-top-150' : 'margin-bottom-150'">
         <b-navbar :class="$isMobile() ? 'fixed-bottom' : 'fixed-top'" type="dark" variant="dark-1">
-            <b-navbar-brand>{{ brandLabel }}</b-navbar-brand>
+            <b-navbar-brand v-on:click="selectSection('home')">{{ brandLabel }}</b-navbar-brand>
             <b-nav-item v-on:click="selectSection('home')">
                 <div v-if="$isMobile()">
                     <home-icon size="2x" />
