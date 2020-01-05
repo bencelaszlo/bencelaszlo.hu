@@ -1,6 +1,10 @@
 # bencelaszlo.github.io
 
-## Project setup
+Personal website.
+
+## Scripts
+
+### Project setup
 ```
 npm install
 ```
@@ -23,4 +27,19 @@ npm run test
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### Deploy to GitHub Pages
+˙˙˙
+npm run deploy
+˙˙˙
+
+### Generate documentation for development
+```
+docs:dev
+```
+
+### Generate documentation with static assets
+```
+docs:build
 ```
