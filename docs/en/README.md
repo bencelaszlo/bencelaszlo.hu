@@ -1,1 +1,0 @@
-Back to the [main site](https://bencelaszlo.github.io)

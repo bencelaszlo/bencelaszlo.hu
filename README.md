@@ -34,12 +34,12 @@ npm run lint
 npm run deploy
 ˙˙˙
 
-### Generate documentation for development
+### Generate blog for development
 ```
-docs:dev
+npm run blog
 ```
 
-### Generate documentation with static assets
+### Generate blog with static assets
 ```
-docs:build
+npm run blog:build
 ```
