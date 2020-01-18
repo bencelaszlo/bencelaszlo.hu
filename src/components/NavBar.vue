@@ -20,15 +20,15 @@
                     <span class="ml-2">{{ navbarLabels.openSource }}</span>
                 </div>
             </b-nav-item>
-            <!--<b-nav-item v-on:click="selectSection('blog')">
+            <b-nav-item href="/blog">
                 <div v-if="$isMobile()">
                     <book-open-icon size="2x" />
                 </div>
                 <div v-else>
                     <book-open-icon size="3x" />
-                    <span class="ml-2"> {{ navbarLabels.blog }} </span>
+                    <span class="ml-2">{{ navbarLabels.blog }}</span>
                 </div>
-            </b-nav-item>-->
+            </b-nav-item>
             <b-nav-item v-on:click="selectSection('about')">
                 <div v-if="$isMobile()">
                     <info-icon size="2x" />
@@ -44,7 +44,7 @@
 
 <script>
     import {
-        // BookOpenIcon,
+        BookOpenIcon,
         CodeIcon,
         HomeIcon,
         InfoIcon
@@ -54,7 +54,7 @@
         name: "NavBar",
 
         components: {
-            // BookOpenIcon,
+            BookOpenIcon,
             CodeIcon,
             HomeIcon,
             InfoIcon
@@ -68,7 +68,7 @@
                 navbarLabels: {
                     home: 'Home',
                     openSource: 'Open Source Contributions',
-                    // blog: 'Blog',
+                    blog: 'Blog',
                     about: 'About'
                 }
             }

@@ -2,7 +2,6 @@
     <div id="app" class="bg-dark-1">
         <NavBar />
         <OpenSource v-if="this.$store.getters.selectedSection === 'open-source'" />
-        <Blog v-if="this.$store.getters.selectedSection === 'blog'" />
         <About v-if="this.$store.getters.selectedSection === 'about'" />
         <Home v-if="this.$store.getters.selectedSection === 'home'" />
         <Footer />
@@ -12,7 +11,6 @@
 <script>
     import NavBar from "./NavBar.vue";
     import OpenSource from "./open-source/OpenSource.vue";
-    import Blog from "./blog/Blog.vue";
     import About from "./about/About.vue";
     import Home from "./home/Home.vue";
 
@@ -22,7 +20,6 @@
         components: {
             NavBar,
             OpenSource,
-            Blog,
             About,
             Home
         },

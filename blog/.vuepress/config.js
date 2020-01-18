@@ -16,8 +16,12 @@ module.exports = {
      */
     nav: [
       {
+        text: 'Main Site',
+        link: 'https://bencelaszlo.github.io',
+      },
+      {
         text: 'Blog',
-        link: '/blog/',
+        link: '/',
       },
       {
         text: 'Tags',
@@ -30,22 +34,22 @@ module.exports = {
     footer: {
       contact: [
         {
-          type: 'github',
-          link: 'https://github.com/ulivz',
+          type: 'linkedin',
+          link: 'https://www.linkedin.com/in/bence-laszlo/'
         },
         {
-          type: 'twitter',
-          link: 'https://twitter.com/_ulivz',
+          type: 'github',
+          link: 'https://github.com/bencelaszlo',
         },
+        {
+          type: 'gitlab',
+          link: 'https://gitlab.com/bencelaszlo'
+        }
       ],
       copyright: [
         {
-          text: 'Privacy Policy',
-          link: 'https://policies.google.com/privacy?hl=en-US',
-        },
-        {
-          text: 'GPL Licensed | Copyright © 2018-present Vue.js',
-          link: '',
+          text: '2020 | Bence László',
+          link: 'https://bencelaszlo.github.io',
         },
       ],
     },
