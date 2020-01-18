@@ -1,7 +1,9 @@
 module.exports = {
   title: 'Bence László // Blog',
-  description: 'This is a blog example built by VuePress',
-  theme: '@vuepress/theme-blog', // OR shortcut: @vuepress/blog
+  description: 'Bence László - Software Developer',
+  base: '/blog/',
+  dest: './dist/blog/',
+  theme: '@vuepress/theme-blog',
   themeConfig: {
     /**
      * Ref: https://vuepress-theme-blog.ulivz.com/#modifyblogpluginoptions
@@ -15,7 +17,7 @@ module.exports = {
     nav: [
       {
         text: 'Blog',
-        link: '/',
+        link: '/blog/',
       },
       {
         text: 'Tags',
