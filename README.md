@@ -30,9 +30,9 @@ npm run lint
 ```
 
 ### Deploy to GitHub Pages
-˙˙˙
+```
 npm run deploy
-˙˙˙
+```
 
 ### Generate blog for development
 ```
