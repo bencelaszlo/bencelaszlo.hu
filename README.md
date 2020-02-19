@@ -1,4 +1,4 @@
-# bencelaszlo.github.io
+# bencelaszlo.hu
 
 Personal website.
 
