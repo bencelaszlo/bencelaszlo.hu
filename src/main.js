@@ -10,6 +10,12 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import { store } from './store/index'
 
+// import Vue from 'vue'
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+
 Vue.use(BootstrapVue)
 Vue.use(VueMobileDetection);
 /// Vue.use(Vuex)
