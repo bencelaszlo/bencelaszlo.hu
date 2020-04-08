@@ -11,7 +11,7 @@
     "blog:build": "vuepress build blog",
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "npm run build; npm run; blog:build; git add *; git commit -m \"(dist/*): Regenerate static files.\"; git subtree push --force --prefix dist origin master",
+    "deploy": "npm run build; npm run; blog:build; git add *; git commit -m \"(dist/*): Regenerate static files.\"; git subtree push --prefix dist origin master",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit --passWithNoTests"
   },
