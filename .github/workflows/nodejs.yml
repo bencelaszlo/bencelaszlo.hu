@@ -27,7 +27,7 @@ jobs:
     - run: npm run build
     - run: npm run blog:build
     - run: git config advice.addIgnoredFile false
-    - run: git add *
+    - run: git add dist
     - run: git commit -m "(dist/*) Regenerate static files."
     - run: git subtree push --prefix dist origin master
       env:
