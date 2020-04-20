@@ -26,15 +26,15 @@ jobs:
     - run: npm test
     - run: npm run build
     - run: npm run blog:build
-    - run: git config --local user.email "action@github.com"
-           git config --local user.name "GitHub Action"
-           git config advice.addIgnoredFile false
-           git add dist
-           git commit -m "(dist/*) Regenerate static files."
-           exists=`git show-ref refs/heads/master`
+    - run: git config --local user.email "action@github.com";
+           git config --local user.name "GitHub Action";
+           git config advice.addIgnoredFile false;
+           git add dist;
+           git commit -m "(dist/*) Regenerate static files.";
+           exists=`git show-ref refs/heads/master`;
            if [ -n "$exists" ]
            then
-             git branch -d master
+             git branch -d master;
            fi
            git subtree push --prefix dist origin master
       env:
