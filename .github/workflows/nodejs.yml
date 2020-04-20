@@ -32,8 +32,9 @@ jobs:
            git add dist
            git commit -m "(dist/*) Regenerate static files."
            exists=`git show-ref refs/heads/master`
-           if [ -n "$exists" ]; then
-               git branch -d master
+           if [ -n "$exists" ]
+           then
+             git branch -d master
            fi
            git subtree push --prefix dist origin master
       env:
