@@ -1,5 +1,7 @@
 # bencelaszlo.hu
 
+![Node.js CI](https://github.com/bencelaszlo/bencelaszlo.hu/workflows/Node.js%20CI/badge.svg)
+
 Personal website.
 
 ## Scripts
