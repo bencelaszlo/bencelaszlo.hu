@@ -1,44 +1,28 @@
 <template>
     <div id="app" class="bg-dark-1">
         <NavBar />
-        <OpenSource v-if="this.$store.getters.selectedSection === 'open-source'" />
-        <About v-if="this.$store.getters.selectedSection === 'about'" />
-        <Home v-if="this.$store.getters.selectedSection === 'home'" />
+        <router-view></router-view>
         <Footer />
     </div>
 </template>
 
 <script>
     import NavBar from "./NavBar.vue";
-    import OpenSource from "./open-source/OpenSource.vue";
-    import About from "./about/About.vue";
-    import Home from "./home/Home.vue";
-
     export default {
         name: "app",
 
+        created () {
+            document.title = 'Bence László';
+        },
+
+
         components: {
-            NavBar,
-            OpenSource,
-            About,
-            Home
+            NavBar
         },
 
-        computed: {
-            page: function() {
-                return "open-source";
-            }
-        },
-
-        methods: {
-            switchPage: page => {
-                this.currentPage = page;
-            }
-        },
 
         data: () => {
             return {
-                currentPage: "open-source"
             };
         }
     };

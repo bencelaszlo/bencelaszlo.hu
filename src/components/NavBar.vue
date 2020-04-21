@@ -1,8 +1,8 @@
 <template>
     <header class="bg-black" :class="$isMobile() ? 'margin-top-150' : 'margin-bottom-150'">
         <b-navbar :class="$isMobile() ? 'fixed-bottom' : 'fixed-top'" type="dark" variant="dark-1">
-            <b-navbar-brand v-on:click="selectSection('home')">{{ brandLabel }}</b-navbar-brand>
-            <b-nav-item v-on:click="selectSection('home')">
+            <b-navbar-brand to="/">{{ brandLabel }}</b-navbar-brand>
+            <b-nav-item to="/">
                 <div v-if="$isMobile()">
                     <home-icon size="2x" />
                 </div>
@@ -11,7 +11,7 @@
                     <span class="ml-12">{{ navbarLabels.home }}</span>
                 </div>
             </b-nav-item>
-            <b-nav-item v-on:click="selectSection('open-source')">
+            <b-nav-item to="/open-source">
                 <div v-if="$isMobile()">
                     <code-icon size="2x" />
                 </div>
@@ -20,7 +20,7 @@
                     <span class="ml-2">{{ navbarLabels.openSource }}</span>
                 </div>
             </b-nav-item>
-            <b-nav-item href="/blog">
+            <b-nav-item href="window.location = http://bencelaszlo.hu/blog" >
                 <div v-if="$isMobile()">
                     <book-open-icon size="2x" />
                 </div>
@@ -29,7 +29,7 @@
                     <span class="ml-2">{{ navbarLabels.blog }}</span>
                 </div>
             </b-nav-item>
-            <b-nav-item v-on:click="selectSection('about')">
+            <b-nav-item to="/about">
                 <div v-if="$isMobile()">
                     <info-icon size="2x" />
                 </div>
@@ -74,11 +74,6 @@
             }
         },
 
-        methods: {
-            selectSection(section) {
-                this.$store.commit("selectSection", section);
-            }
-        },
 
         props: {}
     };
