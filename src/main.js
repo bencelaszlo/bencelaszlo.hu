@@ -8,8 +8,6 @@ import App from './components/App'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import { store } from './store/index'
-
 import Home from '../src/components/home/Home'
 import OpenSource from '../src/components/open-source/OpenSource'
 import About from '../src/components/about/About'
@@ -30,7 +28,6 @@ Vue.use(VueMobileDetection);
 Vue.config.productionTip = false
 
 new Vue({
-  store,
   router,
   render: h => h(App),
 }).$mount('#app')
