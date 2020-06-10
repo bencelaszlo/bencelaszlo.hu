@@ -4,6 +4,7 @@
 
         <b-card-group bg-dark>
             <OpenSourceProject
+                class="h-100"
                 v-for="project in projects"
                 v-bind:key="project.name"
                 v-bind="project"
@@ -29,6 +30,7 @@
                 projects: [
                     {
                         name: "KEECO",
+                        contributorLevel: 'Minor contributor',
                         imgSrc: "",
                         imgAlt: "",
                         shortDescription: "Home Automation System.",
@@ -41,6 +43,7 @@
                     },
                     {
                         name: "randoom",
+                        contributorLevel: 'Owner',
                         imgSrc: "",
                         imgAlt: "",
                         shortDescription: "CLI Random Data Generator.",
@@ -55,20 +58,22 @@
                         website: ""
                     },
                     {
-                        name: "Freenetic World",
+                        name: "Bitter Boundaries",
+                        contributorLevel: 'Owner',
                         imgSrc: "",
                         imgAlt: "",
-                        shortDescription: "2D Tower-Defense Videogame",
-                        description: "",
+                        shortDescription: "A small real-time strategy game",
+                        description: "A small real-time strategy game where the main goal is to own every tile of the map.created to GitHub GameJam 2019. It has been ranked at 58th from the 227 entries.",
                         languages: ["Rust"],
                         license: "GPL-V3.0",
                         githubRepositoryLink:
-                            "https://github.com/bencelaszlo/freeneticworld",
+                            "https://github.com/bencelaszlo/bitter-boundaries",
                         gitlabRepositoryLink: "",
                         website: ""
                     },
                     {
                         name: "Cubique",
+                        contributorLevel: 'Owner',
                         imgSrc: "",
                         imgAlt: "",
                         shortDescription: "3D Videogame",
@@ -77,6 +82,20 @@
                         license: "",
                         githubRepositoryLink:
                             "https://github.com/bencelaszlo/cubique",
+                        gitlabRepositoryLink: "",
+                        website: ""
+                    },
+                    {
+                        name: "Habitica",
+                        contributorLevel: 'Minor contributor',
+                        imgSrc: "",
+                        imgAlt: "",
+                        shortDescription: "A habit tracker app which treats your goals like a Role Playing Game.",
+                        description: "A habit tracker app which treats your goals like a Role Playing Game.",
+                        languages: ["JavaScript"],
+                        license: "Other",
+                        githubRepositoryLink:
+                            "https://github.com/HabitRPG/habitica",
                         gitlabRepositoryLink: "",
                         website: ""
                     }

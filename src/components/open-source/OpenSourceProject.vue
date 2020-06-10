@@ -7,6 +7,7 @@
             <b-card-text>{{ description }}</b-card-text>
         </b-card-body>
         <b-card-footer class="bg-red">
+            <div>{{ contributorLevel }}</div>
             <div>{{ languages.join(', ') }}</div>
             <div>{{ license }}</div>
             <b-link
@@ -29,6 +30,10 @@
         name: 'OpenSourceProject',
 
         props: {
+            contributorLevel: {
+                type: String,
+                default: 'Owner'
+            },
             name: {
                 type: String,
                 default: 'Project Name'
