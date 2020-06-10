@@ -4,7 +4,7 @@
     "name": "Bence László",
     "email": "bencelaszlo@protonmail.com"
   },
-  "version": "0.2.1",
+  "version": "0.2.2",
   "private": true,
   "scripts": {
     "blog": "vuepress dev blog",
@@ -16,7 +16,7 @@
     "test": "vue-cli-service test:unit --passWithNoTests"
   },
   "dependencies": {
-    "@vue/cli-plugin-unit-jest": "^4.3.1",
+    "@vue/cli-plugin-unit-jest": "^4.4.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
@@ -26,16 +26,16 @@
     "vue-feather-icons": "^5.0.0",
     "vue-loader": "^15.9.2",
     "vue-mobile-detection": "^1.0.0",
-    "vue-router": "^3.2.0",
+    "vue-router": "^3.3.2",
     "vuex": "^3.4.0",
     "vuex-store": "^1.0.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.3.1",
-    "@vue/cli-plugin-eslint": "^4.3.1",
-    "@vue/cli-service": "^4.3.1",
+    "@vue/cli-plugin-babel": "^4.4.1",
+    "@vue/cli-plugin-eslint": "^4.4.1",
+    "@vue/cli-service": "^4.4.1",
     "@vue/test-utils": "^1.0.3",
-    "@vuepress/plugin-back-to-top": "^1.5.0",
+    "@vuepress/plugin-back-to-top": "^1.5.1",
     "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/theme-blog": "^1.7.1",
     "babel-eslint": "^10.1.0",
@@ -45,7 +45,7 @@
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11",
-    "vuepress": "^1.5.0"
+    "vuepress": "^1.5.1"
   },
   "eslintConfig": {
     "root": true,
