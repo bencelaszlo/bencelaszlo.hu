@@ -28,21 +28,21 @@
             return {
                 projects: [
                     {
-                        name: "KEECO",
+                        name: "KEECO Hub",
                         imgSrc: "",
                         imgAlt: "",
-                        shortDescription: "Home Automation System",
-                        description: "Home Automation System.",
+                        shortDescription: "Central Hub of a Home Automation System",
+                        description: "The central software which orchestrates all the hardware nodes and provides an API for the client access.",
                         languages: ["JavaScript", "C++"],
                         license: "GPL-3.0",
-                        githubRepositoryLink: "",
+                        githubRepositoryLink: "https://github.com/KEECO-HomeAutomation/keeco-hub",
                         gitlabRepositoryLink: "",
                         website: ""
                     },
                     {
                         name: "randoom",
-                        imgSrc: "",
-                        imgAlt: "",
+                        imgSrc: require("./../../assets/images/randoom.png"),
+                        imgAlt: "Screenshot about an example usage of the randoom tool.",
                         shortDescription: "CLI Random Data Generator",
                         description:
                             "An easy-to-use CLI tool for generating random numbers, colors, characters and strings.",
@@ -56,8 +56,8 @@
                     },
                     {
                         name: "Bitter Boundaries",
-                        imgSrc: "",
-                        imgAlt: "",
+                        imgSrc: require("./../../assets/images/bitter_boundaries.png"),
+                        imgAlt: "Bitter Boundaries - ingame screenshot",
                         shortDescription: "2D Real-Time Strategy Videogame",
                         description: "A small real-time strategy game where the main goal is to own every tile of the map. It was my submission to Github GameJam 2019 (ranked 58/228).",
                         languages: ["Rust"],
@@ -82,8 +82,8 @@
                     },
                     {
                         name: "bencelaszlo.hu",
-                        imgSrc: "",
-                        imgAlt: "",
+                        imgSrc: require("./../../assets/images/bencelaszlo_hu.png"),
+                        imgAlt: "Screenshot from this website.",
                         shortDescription: "This website",
                         description: "Website about me as a professional, blog and open source portfolio.",
                         languages: ["JavaScript", "Vue", "CSS"],
