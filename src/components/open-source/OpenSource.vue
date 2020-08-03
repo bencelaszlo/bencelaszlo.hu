@@ -4,6 +4,7 @@
 
         <b-card-group bg-dark>
             <OpenSourceProject
+                class="h-100"
                 v-for="project in projects"
                 v-bind:key="project.name"
                 v-bind="project"
@@ -28,7 +29,8 @@
             return {
                 projects: [
                     {
-                        name: "KEECO Hub",
+                        name: "KEECO",
+                        contributorLevel: 'Minor contributor',
                         imgSrc: "",
                         imgAlt: "",
                         shortDescription: "Central Hub of a Home Automation System",
@@ -41,6 +43,7 @@
                     },
                     {
                         name: "randoom",
+                        contributorLevel: 'Owner',
                         imgSrc: require("./../../assets/images/randoom.png"),
                         imgAlt: "Screenshot about an example usage of the randoom tool.",
                         shortDescription: "CLI Random Data Generator",
@@ -56,6 +59,7 @@
                     },
                     {
                         name: "Bitter Boundaries",
+                        contributorLevel: 'Owner',
                         imgSrc: require("./../../assets/images/bitter_boundaries.png"),
                         imgAlt: "Bitter Boundaries - ingame screenshot",
                         shortDescription: "2D Real-Time Strategy Videogame",
@@ -69,6 +73,7 @@
                     },
                     {
                         name: "Cubique",
+                        contributorLevel: 'Owner',
                         imgSrc: "",
                         imgAlt: "",
                         shortDescription: "3D Videogame",
@@ -79,6 +84,18 @@
                             "https://github.com/bencelaszlo/cubique",
                         gitlabRepositoryLink: "",
                         website: ""
+                    },
+                    {
+                        name: "Habitica",
+                        contributorLevel: 'Minor contributor',
+                        imgSrc: "",
+                        imgAlt: "",
+                        shortDescription: "A habit tracker app which treats your goals like a Role Playing Game.",
+                        description: "A habit tracker app which treats your goals like a Role Playing Game.",
+                        languages: ["JavaScript"],
+                        license: "Other",
+                        githubRepositoryLink:
+                            "https://github.com/HabitRPG/habitica",
                     },
                     {
                         name: "bencelaszlo.hu",

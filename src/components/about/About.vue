@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="about">
         <b-card class="bg-yellow">
             <b-card-header class="bg-orange">
                 <h1>Bence László</h1>
@@ -24,6 +24,7 @@
                                     Application Developer
                                     <b-badge pill variant="dark">2019 Jul -</b-badge>
                                 </h4>
+                                <p>Develop both back-end (Node.JS, AWS, ASP.NET Core) and front-end (Vue.JS) side of cloud-based web applications as a professional.</p>
                                 <BadgePill
                                     v-for="pill in applicationDeveloperPills"
                                     v-bind:key="pill.label"
@@ -292,7 +293,7 @@
                 ],
                 bscTechnologyPills: [
                         {
-                            label: 'ANSI C',
+                            label: 'C',
                             variant: 'red',
                         },
                         {
@@ -316,10 +317,6 @@
                             variant: 'yellow'
                         },
                         {
-                            label: 'IPC',
-                            variant: 'yellow'
-                        },
-                        {
                             label: 'TeX',
                             variant: 'cyan'
                         },
@@ -336,32 +333,12 @@
                             variant: 'red'
                         },
                         {
-                            label: 'database',
-                            variant: 'ble'
-                        },
-                        {
-                            label: 'operating system',
-                            variant: 'green'
-                        },
-                        {
-                            label: 'numerical methods',
-                            variant: 'blue'
-                        },
-                        {
                             label: 'OpenGL',
                             variant: 'purple'
                         },
                         {
-                            label: 'GLUT',
-                            variant: 'grey'
-                        },
-                        {
                             label: 'FreeGLUT',
                             variant: 'grey'
-                        },
-                        {
-                            label: 'parallel processing',
-                            variant: 'orange'
                         },
                         {
                             label: 'OpenMPI',
@@ -400,7 +377,7 @@
                             variant: 'grey'
                         },
                         {
-                            label: 'express',
+                            label: 'Express.JS',
                             variant: 'red'
                         },
                         {
@@ -412,10 +389,6 @@
                             variant: 'brown'
                         },
                         {
-                            label: 'rustc',
-                            variant: 'red'
-                        },
-                        {
                             label: 'Rust Cargo',
                             variant: 'orange'
                         },
@@ -423,16 +396,13 @@
                             label: 'ReactJS',
                             variant: 'cyan'
                         },
+
                         {
-                            label: 'flux',
-                            variant: 'blue'
-                        },
-                        {
-                            label: 'mongoDB',
+                            label: 'MongoDB',
                             variant: 'red'
                         },
                         {
-                            label: 'mongoose',
+                            label: 'Mongoose',
                             variant: 'orange'
                         },
                         {
@@ -448,16 +418,8 @@
                             variant: 'pink'
                         },
                         {
-                            label: 'node-sass',
-                            variant: 'purple'
-                        },
-                        {
                             label: 'Pthreads',
                             variant: 'red'
-                        },
-                        {
-                            label: 'Push.JS',
-                            variant: 'orange'
                         },
                         {
                             label: 'XML',
@@ -505,5 +467,11 @@
     };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+@media screen and (min-width: 900px) {
+    .about {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
 </style>
